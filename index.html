@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Marvin & Sierra's Wedding</title>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <title>Marvin & Sierra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,79 +13,115 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
-      background: url('background.jpg') no-repeat center center fixed;
+      background-color: #faf8f6;
+      background-image: url('background.jpg');
       background-size: cover;
-      color: #4b4b4b;
-      text-align: center;
-      min-height: 100vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      color: #5b4a42;
+    }
+
+    .container {
+      height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
     }
 
-    .overlay {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 3rem 1rem;
-      border-radius: 12px;
-      max-width: 700px;
-      margin: auto;
-    }
-
-    h1 {
+    .title {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.5rem;
-      color: #c87c7c;
+      font-size: 3rem;
+      margin: 1rem 0 0.5rem;
     }
 
-    p.date-location {
-      font-size: 1.2rem;
-      margin-top: 1rem;
-    }
-
-    section {
-      padding: 2rem 1rem;
-    }
-
-    .rsvp-button {
+    .save-date {
+      font-size: 1rem;
       margin-top: 2rem;
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      background-color: #e29191;
-      color: white;
-      font-size: 1.1rem;
-      text-decoration: none;
-      border-radius: 30px;
-      transition: background 0.3s ease;
+      letter-spacing: 2px;
+      color: #8a7669;
     }
 
-    .rsvp-button:hover {
-      background-color: #c97575;
+    .wedding-date {
+      margin: 1rem 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #8a7669;
+    }
+
+    .description {
+      color: #7c6c60;
+      margin: 1rem auto;
+      max-width: 400px;
+      font-size: 0.9rem;
+    }
+
+    .cta-button {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background-color: #d2b8a3;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .cta-button:hover {
+      background-color: #c5a994;
+    }
+
+    .image-frame {
+      margin: 2rem auto 0;
+      border-radius: 50%;
+      border: 6px solid #eee;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     footer {
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #777;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <div class="overlay">
-    <h1>Marvin & Sierra</h1>
-    <p class="date-location">January 7th, 2025 — 2301 Keele St, North York, ON M6M 3Z9</p>
+  <div class="container">
+    <p class="save-date">SAVE THE DATE</p>
+    <h1 class="title">Marvin & Sierra</h1>
+    <p class="wedding-date">01.07.2025</p>
+    <p class="description">You're invited to our wedding celebration! Join us for a day of love and joy.</p>
+    <p class="description"><strong>Address:</strong> 2301 Keele St, North York, ON M6M 3Z9</p>
+    <a class="cta-button" href="https://forms.gle/your-form-link" target="_blank">RSVP</a>
 
-    <section>
-      <p>We’re so excited to celebrate our special day with you!</p>
-      <a class="rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeAikaMQQZdpvGxcnJslHZ4E8cETLUwelpavLp6c3tclzfscg/viewform?usp=header" target="_blank">RSVP Now</a>
-    </section>
-
-    <footer>
-      With love, Marvin & Sierra
-    </footer>
+    <div class="image-frame">
+      <img src="couple.jpg" alt="Marvin and Sierra">
+    </div>
   </div>
+
+  <footer>
+    With love, Marvin & Sierra
+  </footer>
 
 </body>
 </html>
